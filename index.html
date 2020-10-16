@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Ejercicio de utilizacion de css</title>
-    <link rel="stylesheet" type="text/css"  href="css/cssstyle.css">
+    <link rel="stylesheet" type="text/css"  href="css/style.css">
     <!--Bootstrap-->
     <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet" />
     <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -12,28 +12,184 @@
   </head>
   <body>
     <header>
-		<div class="container-fluid row">
-			<div class="col-md-10">
-				<h1>
-				<img id="HeadingLogo.jpg" src="Images/HeadingLogo.jpg" width="150">
-				Arquitecturas Web 
-				</h1>
-			</div>
-			<div class="col-md-2" style="text-align: center;">
-				<button type="button" id="botonLogin">Iniciar Sesión</button>
-			</div>
-		</div>
-	</header>
+		  <div class="container-fluid row">
+			  <div class="col-md-10">
+				  <h1>
+				    <img id="headingLogo" src="assets/logo_ufps.png">
+				     Arquitecturas Web
+				  </h1>
+			  </div>
+		  </div>
+	  </header>
     <nav>
       <ul>
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Arquitectura</a></li>
-        <li><a href="#">Batman</a></li>
-        <li><a href="#">Iron Man</a></li>
-        <li><a href="#">Capitan America</a></li>
+        <li><a href="#">Tecnologías</a></li>
+        <li><a href="#">Contactanos</a></li>
       </ul>
     </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">El Modelo cero y el código spaguetti</h3>
+          <div class="imagen-arquitectura">
 
-    <footer><p>Stark Industries - 2018</p></footer>
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Soluciones iniciales cliente/servidor en las que tenemos
+              una página JSP/ASP/PHP que se conecta a una base de
+              datos y genera un nuevo contenido html. Es código
+              spaguetti, el que nadie quiere tener que pero que en su
+              momento se usó mucho. A día de hoy lo puedes
+              encontrar en más sitios de los que se piensa. Como
+              ventaja fundamental destaca su sencillez a nivel de
+              arquitectura y como desventaja su poca flexibilidad y nula
+              capacidad de reutilización
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">El Modelo 1</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Este fue un salto importante , promueve la modularización
+              y el uso de componentes a través de la programación
+              orientada a objeto. Fue desde mi punto de vista un gran
+              salto. Hay enfoques tipo Rails que se apoyaron más en un
+              patrón tipo Active Record y otros en Servicios y
+              Repositorios como Spring. La clave fundamental es
+              generar componentes en la capa de backend y aumentar la
+              reutilización de esa parte.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">El modelo 2 (MVC)</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Quizás para mucha gente el modelo más importante, se
+              apuesta por la separación de responsabilidades entre
+              Vista, Controlador y Modelo. Prácticamente todos los
+              frameworks web han implementado este enfoque de una
+              forma u otra. Ejemplos son: Struts en Java , ASP.NET en
+              Microsoft o Laravel en PHP.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">El Modelo FrontController/Enrutador</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Una evolución importante del modelo MVC fue el modelo
+              MVC 2 o de FrontController que apuesta por una
+              arquitectura en la que únicamente hay un controlador
+              principal y gestiona todo a través de acciones. Esta es un
+              poco la idea de muchos de los frameworks modernos con
+              el concepto de router en la capa de presentación. El
+              enfoque más clásico puede ser Struts en el lado del
+              servidor o Spring MVC.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">Arquitecturas Web y AJAX</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Hasta ese momento todas las evoluciones se produjeron
+              del lado del servidor. El lado cliente tenía pocas
+              novedades. Es en esta situación cuando surge AJAX como
+              tecnología para mejorar el rendimiento entre cliente y
+              servidor. Esto supuso una verdadera revolución a la forma
+              de programar.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">Arquitecturas Web y SPA</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Con la llegada del mundo móvil y la necesidad de tener las
+              aplicaciones web cada vez más desconectadas surgen las
+              arquitecturas SPA (Simple Page Application) . Su propuesta
+              principal es dar mayor responsabilidad al navegador y que
+              el se encargue de cargar las vistas y datos utilizando AJAX.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">Arquitecturas SPA MVC</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Poco a poco el lado cliente comienza a tener más peso en
+              los desarrollos y se necesita organizar mejor el código de
+              JavaScript . Aparecen los primeros frameworks MVC de
+              cliente como Backbone.js que permiten dividir las
+              responsabilidades de la misma forma que en el servidor.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">SPA MVC y uso de componentes</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Estas arquitecturas empiezan a madurar rápidamente y
+              aparecen tecnologías como Angular.js que promueve el
+              uso del modelo MVC y la utilización de componentes en
+              capa de presentación . Aparecen librerías
+              complementarias como React que se centran en estos
+              últimos.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h3 class="titulo-arquitectura">Arquitecturas Web Isomórficas</h3>
+          <div class="imagen-arquitectura">
+
+          </div>
+          <div class="texto-arquitectura">
+            <p>
+              Ahora mismo estamos entrando en otra fase , comienza a
+              llegar el JavaScript Isomórfico . Si nos fijamos en el último
+              diagrama la parte cliente y la parte servidor son muy
+              parecidas. ¿Qué sucedería en el caso de que ambas partes
+              estuvieran implementadas en JavaScript? . Pues que
+              probablemente mucho código se podría compartir y según
+              se ejecutara la aplicación en cliente o en servidor el
+              comportamiento variaría.  
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>2020 © All Rights Reserved. Desarrollado por Brayan Rincón Mendoza (1151136)</p>
+    </footer>
   </body>
 </html>

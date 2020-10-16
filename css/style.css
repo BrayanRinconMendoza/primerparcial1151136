@@ -1,0 +1,55 @@
+{
+	margin: 0px;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+	color: black;
+	background-color: white;
+}
+
+#headingLogo {
+  width: 200px;
+  height: 150px; 
+}
+
+body{
+	margin: 0;
+  margin-bottom: 40px;
+	background-color: white;
+	padding-bottom: 70px;
+}
+
+.titulo-arquitectura {
+  color: black;
+  font-size: 16px;
+  text-align: left;
+}
+
+.imagen-arquitectura {
+
+}
+
+.texto-arquitectura {
+  color: black;
+  font-size: 20px;
+  text-align: justify;
+}
+
+footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: black;
+	color: #d84315;
+	text-align: center;
+	position: absolute;
+  	bottom: 0;
+  	width: 100%;
+  	height: 40px;
+}
